@@ -147,7 +147,7 @@ public class App extends Application {
     
     public void alleVermietungen(){
         this.alleVermietungen = new HashMap<Vermietung, Integer>();
-        alleVermietungen.add(new Miete(1, 1, 1,technik, kunde));
+       alleVermietungen.get(new Miete(1, 1, 1,technik, kunde));
         
     } 
     
