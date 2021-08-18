@@ -23,27 +23,61 @@ public class MaterialienViewController implements Initializable {
 
 
     @FXML
-    private ChoiceBox<?> CbBoxen;
+    private ChoiceBox<String> CbBoxen;
     @FXML
-    private ChoiceBox<?> CbKabel;
+    private ChoiceBox<String> CbKabel;
     @FXML
-    private ChoiceBox<?> CbBuehnenplatten;
+    private ChoiceBox<String> CbBuehnenplatten;
     @FXML
-    private ChoiceBox<?> CbPult;
+    private ChoiceBox<String> CbPult;
     @FXML
-    private ChoiceBox<?> Boxenanzahl;
+    private ChoiceBox<Integer> Boxenanzahl;
     @FXML
-    private ChoiceBox<?> Kabelanzahl;
+    private ChoiceBox<Integer> Kabelanzahl;
     @FXML
-    private ChoiceBox<?> Buehnenplattenanzahl;
+    private ChoiceBox<Integer> Buehnenplattenanzahl;
     @FXML
-    private ChoiceBox<?> Pultanzahl;
+    private ChoiceBox<Integer> Pultanzahl;
     /**
      * Initializes the controller class.
-     */
+     */    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        CbBoxen.getItems().add("klein");
+        CbBoxen.getItems().add("mittel");
+        CbBoxen.getItems().add("groß");
+        
+        CbKabel.getItems().add("klein");
+        CbKabel.getItems().add("mittel");
+        CbKabel.getItems().add("groß");
+        
+        CbBuehnenplatten.getItems().add("klein");
+        CbBuehnenplatten.getItems().add("mittel");
+        CbBuehnenplatten.getItems().add("groß");
+        
+        CbPult.getItems().add("klein");
+        CbPult.getItems().add("mittel");
+        CbPult.getItems().add("groß");
+        
+        for(int i = 0;i <11;i++){
+            Boxenanzahl.getItems().add(i);
+        }
+        
+        for(int i = 0;i <11;i++){
+            Kabelanzahl.getItems().add(i);
+        }
+        
+        for(int i = 0;i <11;i++){
+            Buehnenplattenanzahl.getItems().add(i);
+        }
+        
+        for(int i = 0;i <11;i++){
+            Pultanzahl.getItems().add(i);
+        }
+        
+        
     }    
     
     @FXML

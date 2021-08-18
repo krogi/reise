@@ -18,24 +18,32 @@ public class App extends Application {
 
     private static ArrayList<Miete> mietenList;
     private static ArrayList<Kunde> kundeList;
-    private static ArrayList<Techniker> techniker;
+    private static ArrayList<Techniker> technikerList;
     private static ArrayList<Privatkunde> privatkundenList;
     private static ArrayList<Geschaeftskunde> geschaeftskundeList;
 
-    private static Techniker technikerList;
+    private static Techniker techniker;
     private static Kunde selectedKunde;
     private static Miete selectedMiete;
     private static Privatkunde selectedprivatkunde;
     private static Privatkunde selectedgeschaeftskunde;
 
-    public static Techniker getTechniker() {
+    public static ArrayList<Techniker> getTechnikerList() {
         return technikerList;
     }
 
-    public static void setTechniker(Techniker techniker) {
-        App.technikerList = techniker;
+    public static void setTechnikerList(ArrayList<Techniker> technikerList) {
+        App.technikerList = technikerList;
     }
-    
+
+    public static Techniker getTechniker() {
+        return techniker;
+    }
+
+    public static void setTechniker(Techniker techniker) {
+        App.techniker = techniker;
+    }
+
     public static Kunde getSelectedKunde() {
         return selectedKunde;
     }
@@ -117,9 +125,6 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        
-        
-        
         launch();
     }
 
