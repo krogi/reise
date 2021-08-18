@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * JavaFX App
@@ -18,32 +19,29 @@ public class App extends Application {
 
     private static ArrayList<Miete> mietenList;
     private static ArrayList<Kunde> kundeList;
-    private static ArrayList<Techniker> technikerList;
+    private static ArrayList<Techniker> techniker;
     private static ArrayList<Privatkunde> privatkundenList;
     private static ArrayList<Geschaeftskunde> geschaeftskundeList;
 
-    private static Techniker techniker;
+    private static Techniker technikerList;
     private static Kunde selectedKunde;
     private static Miete selectedMiete;
     private static Privatkunde selectedprivatkunde;
     private static Privatkunde selectedgeschaeftskunde;
-
-    public static ArrayList<Techniker> getTechnikerList() {
-        return technikerList;
-    }
-
-    public static void setTechnikerList(ArrayList<Techniker> technikerList) {
-        App.technikerList = technikerList;
-    }
+    
+    private HashMap alleVermietungen;
+    private Vermietung vermietung;
+    private Technik technik;
+    private Kunde kunde;
 
     public static Techniker getTechniker() {
-        return techniker;
+        return technikerList;
     }
-
+    
     public static void setTechniker(Techniker techniker) {
-        App.techniker = techniker;
+        App.technikerList = techniker;
     }
-
+    
     public static Kunde getSelectedKunde() {
         return selectedKunde;
     }
@@ -125,7 +123,32 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
+        
+        
+        
         launch();
     }
+    
+    public HashMap getAlleVermietungen() {
+        return alleVermietungen;
+    }
 
+    public void setAlleVermietungen(HashMap alleVermietungen) {
+        this.alleVermietungen = alleVermietungen;
+    }
+    
+    public Vermietung getVermietung() {
+        return vermietung;
+    }
+
+    public void setVermietung(Vermietung vermietung) {
+        this.vermietung = vermietung;
+    }
+    
+    public void alleVermietungen(){
+        this.alleVermietungen = new HashMap<Vermietung, Integer>();
+        alleVermietungen.add(new Miete(1, 1, 1,technik, kunde));
+        
+    } 
+    
 }
