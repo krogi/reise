@@ -18,6 +18,9 @@ public class Vermietung {
     private Kunde kunde;
     private static ArrayList<Technik> technik;
 
+    }
+    
+    
     public Vermietung(Techniker techniker, Kunde kunde) {
         this.techniker = techniker;
         this.kunde = kunde;
@@ -46,6 +49,12 @@ public class Vermietung {
     public static void setTechnik(ArrayList<Technik> technik) {
         Vermietung.technik = technik;
     }
-    
 
+    public static HashMap getVermietungen() {
+        return vermietungen;
+    }
+
+    public static void setVermietungen(HashMap vermietungen) {
+        Vermietung.vermietungen = vermietungen;
+    }
 }
