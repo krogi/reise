@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.informatiktechnik.KundenCreatorViewController">
+   <children>
+      <Label layoutX="292.0" layoutY="33.0" text="Kundenansicht" />
+      <Button layoutX="569.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnZurueck" prefHeight="25.0" prefWidth="59.0" text="Zurück" />
+      <Button layoutX="169.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnPrivatekunde" text="Privatkunde" />
+      <Button layoutX="427.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnGeschaeftskunde" text="Geschäftskunde" />
+   </children>
+</Pane>
