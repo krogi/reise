@@ -17,8 +17,7 @@ public class Vermietung {
     private Techniker techniker;
     private Kunde kunde;
     private static ArrayList<Technik> technik;
-
-    }
+    private static HashMap vermietungen;
     
     
     public Vermietung(Techniker techniker, Kunde kunde) {
