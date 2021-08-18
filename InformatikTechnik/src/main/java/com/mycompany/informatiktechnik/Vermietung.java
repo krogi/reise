@@ -17,10 +17,13 @@ public class Vermietung {
     private Techniker techniker;
     private Kunde kunde;
     private static ArrayList<Technik> technik;
-
+    private ArrayList<Miete> miete;
+    
     public Vermietung(Techniker techniker, Kunde kunde) {
         this.techniker = techniker;
         this.kunde = kunde;
+        ArrayList<Miete> miete = new ArrayList<Miete>();
+        miete.add(miete.Miete(techniker, kunde);
     }
 
     public Techniker getTechniker() {
@@ -46,6 +49,13 @@ public class Vermietung {
     public static void setTechnik(ArrayList<Technik> technik) {
         Vermietung.technik = technik;
     }
-    
+                  
+    public ArrayList<Miete> getMiete() {
+        return miete;
+    }
+
+    public void setMiete(ArrayList<Miete> miete) {
+        this.miete = miete;
+    }                  
 
 }
