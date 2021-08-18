@@ -12,10 +12,22 @@ import com.mycompany.informatiktechnik.Kunde;
  * @author jorda
  */
 public class Privatkunde extends Kunde{
+    private Techniker techniker;
 
-    public Privatkunde(String name, String vorname, String adresse) {
-        super(name, vorname, adresse);
+    public Privatkunde(Techniker techniker, String adresse, String name, String vorname) {
+        super(adresse, name, vorname);
+        this.techniker = techniker;
     }
+
+    public Techniker getTechniker() {
+        return techniker;
+    }
+
+    public void setTechniker(Techniker techniker) {
+        this.techniker = techniker;
+    }
+
+    
 
 
     

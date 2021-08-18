@@ -11,9 +11,12 @@ package com.mycompany.informatiktechnik;
  */
 public class Geschaeftskunde extends Kunde {
     private String firma;
-    public Geschaeftskunde(String firma, String adresse, String name, String vorname) {
+    private Techniker techniker;
+
+    public Geschaeftskunde(String firma, Techniker techniker, String adresse, String name, String vorname) {
         super(adresse, name, vorname);
         this.firma = firma;
+        this.techniker = techniker;
     }
 
     public String getFirma() {
@@ -23,7 +26,13 @@ public class Geschaeftskunde extends Kunde {
     public void setFirma(String firma) {
         this.firma = firma;
     }
-    
-    
+
+    public Techniker getTechniker() {
+        return techniker;
+    }
+
+    public void setTechniker(Techniker techniker) {
+        this.techniker = techniker;
+    }
     
 }

@@ -12,7 +12,7 @@ package com.mycompany.informatiktechnik;
 public abstract class Personen {
     private String name;
     private String vorname;
-
+    
     public Personen(String name, String vorname) {
         this.name = name;
         this.vorname = vorname;

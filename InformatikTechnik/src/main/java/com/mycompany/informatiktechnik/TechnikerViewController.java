@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 import javafx.scene.control.ListView;
+import javafx.scene.input.MouseEvent;
 /**
  * FXML Controller class
  *
@@ -22,13 +23,17 @@ public class TechnikerViewController implements Initializable {
 
 
     @FXML
-    private ListView<?> lvTechniker;
+    private ListView<String> lvTechniker;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        lvTechniker.getItems().add("Holger" + " " + "Trampe");
+        lvTechniker.getItems().add("Roy" + " " + "Trenneman");
+        lvTechniker.getItems().add("Maurice" + " " + "Moss");
+        
     }    
     
     @FXML
@@ -38,7 +43,13 @@ public class TechnikerViewController implements Initializable {
 
     @FXML
     private void btnZurueck(ActionEvent event) throws IOException {
+        
         App.setRoot("PrivatKundenView");
+        
+    }
+
+    @FXML
+    private void lvcTechniker(MouseEvent event) {
         
     }
 
