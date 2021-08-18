@@ -1,57 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
-
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.informatiktechnik.MaterialienViewController">
    <children>
       <Label layoutX="250.0" layoutY="32.0" text="Materialien Mieten" />
-      <Label layoutX="76.0" layoutY="98.0" text="Boxen" />
-      <Label layoutX="76.0" layoutY="151.0" text="Kabel" />
-      <Label layoutX="76.0" layoutY="213.0" text="Bühnenplatten" />
-      <Label layoutX="76.0" layoutY="273.0" text="Pult" />
-      <TextField fx:id="tfBoxen" layoutX="76.0" layoutY="115.0">
-         <contextMenu>
-            <ContextMenu>
-              <items>
-                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-              </items>
-            </ContextMenu>
-         </contextMenu>
-      </TextField>
-      <TextField fx:id="tfKabel" layoutX="76.0" layoutY="175.0">
-         <contextMenu>
-            <ContextMenu>
-              <items>
-                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-              </items>
-            </ContextMenu>
-         </contextMenu>
-      </TextField>
-      <TextField fx:id="tfBuehnenplatten" layoutX="76.0" layoutY="237.0">
-         <contextMenu>
-            <ContextMenu>
-              <items>
-                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-              </items>
-            </ContextMenu>
-         </contextMenu>
-      </TextField>
-      <TextField fx:id="tfPult" layoutX="76.0" layoutY="290.0">
-         <contextMenu>
-            <ContextMenu>
-              <items>
-                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-              </items>
-            </ContextMenu>
-         </contextMenu>
-      </TextField>
-      <Button layoutX="514.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnZurueck" text="Zurück" />
-      <Button layoutX="34.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnCreateMiete" text="Miete Erstellen" />
+      <Label layoutX="81.0" layoutY="92.0" text="Boxen" />
+      <Label layoutX="81.0" layoutY="145.0" text="Kabel" />
+      <Label layoutX="81.0" layoutY="207.0" text="Bühnenplatten" />
+      <Label layoutX="81.0" layoutY="267.0" text="Pult" />
+      <Button layoutX="54.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnZurueck" text="Zurück" />
+      <Button layoutX="477.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnCreateMiete" text="Miete Erstellen" />
+      <ChoiceBox fx:id="CbBoxen" layoutX="80.0" layoutY="109.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="CbKabel" layoutX="80.0" layoutY="169.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="CbBuehnenplatten" layoutX="80.0" layoutY="224.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="CbPult" layoutX="80.0" layoutY="284.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="Boxenanzahl" layoutX="250.0" layoutY="109.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="Kabelanzahl" layoutX="250.0" layoutY="169.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="Buehnenplattenanzahl" layoutX="250.0" layoutY="224.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="Pultanzahl" layoutX="250.0" layoutY="284.0" prefWidth="150.0" />
    </children>
 </Pane>

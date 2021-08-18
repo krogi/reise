@@ -8,7 +8,8 @@
    <children>
       <Label layoutX="292.0" layoutY="33.0" text="Kundenansicht" />
       <Button layoutX="569.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnZurueck" prefHeight="25.0" prefWidth="59.0" text="Zurück" />
-      <Button layoutX="169.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnPrivatekunde" text="Privatkunde" />
-      <Button layoutX="427.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnGeschaeftskunde" text="Geschäftskunde" />
+      <Button layoutX="181.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnPrivatekunde" text="Privatkunde" />
+      <Button layoutX="390.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnGeschaeftskunde" text="Geschäftskunde" />
+      <Label layoutX="221.0" layoutY="114.0" text="Wählen sie aus was für ein Kunde sie sind" />
    </children>
 </Pane>

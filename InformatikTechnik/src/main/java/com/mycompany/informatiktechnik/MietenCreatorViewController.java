@@ -5,11 +5,13 @@
  */
 package com.mycompany.informatiktechnik;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ListView;
 
 /**
  * FXML Controller class
@@ -18,6 +20,9 @@ import javafx.fxml.Initializable;
  */
 public class MietenCreatorViewController implements Initializable {
 
+    @FXML
+    private ListView<?> lvTechniker;
+
     /**
      * Initializes the controller class.
      */
@@ -25,13 +30,19 @@ public class MietenCreatorViewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
+
     @FXML
-    private void btnZurück(ActionEvent event) {
+    private void btnZurueck(ActionEvent event) throws IOException {
+        App.setRoot("MaterialienView");
     }
 
     @FXML
-    private void btnWeiter(ActionEvent event) {
+    private void btnLoeschen(ActionEvent event) {
+    }
+
+    @FXML
+    private void btnCreateMiete(ActionEvent event) throws IOException {
+    App.setRoot("AlleMietenView");
     }
 
 }

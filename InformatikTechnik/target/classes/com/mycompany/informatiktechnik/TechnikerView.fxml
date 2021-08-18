@@ -9,7 +9,7 @@
    <children>
       <Label layoutX="309.0" layoutY="47.0" text="Techniker" />
       <ListView fx:id="lvTechniker" layoutX="211.0" layoutY="86.0" prefHeight="288.0" prefWidth="247.0" />
-      <Button layoutX="56.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnGoToMiete" text="Zur Miete" />
-      <Button layoutX="549.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnZurueck" text="Zurück" />
+      <Button layoutX="539.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnGoToMiete" text="Zur Miete" />
+      <Button layoutX="69.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnZurueck" text="Zurück" />
    </children>
 </Pane>

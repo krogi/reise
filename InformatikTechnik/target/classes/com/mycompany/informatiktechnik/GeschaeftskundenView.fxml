@@ -8,15 +8,15 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.informatiktechnik.GeschaeftskundenViewController">
    <children>
       <Label layoutX="244.0" layoutY="33.0" text="Geschäftskunden Erstellung" />
-      <Label layoutX="61.0" layoutY="138.0" text="Vorname" />
-      <Label layoutX="64.0" layoutY="196.0" text="Nachname" />
-      <Label layoutX="63.0" layoutY="244.0" text="Firma" />
-      <Label layoutX="64.0" layoutY="292.0" text="Adresse" />
-      <TextField fx:id="tfVorname" layoutX="61.0" layoutY="164.0" />
-      <TextField fx:id="tfNachname" layoutX="61.0" layoutY="213.0" />
-      <TextField fx:id="tfFirma" layoutX="61.0" layoutY="261.0" />
-      <TextField fx:id="tfAdresse" layoutX="61.0" layoutY="309.0" />
-      <Button layoutX="535.0" layoutY="392.0" mnemonicParsing="false" onAction="#btnZurueck" text="Zurück" />
-      <Button layoutX="38.0" layoutY="392.0" mnemonicParsing="false" onAction="#btnErstelleGeKunde" text="Erstellen" />
+      <Label layoutX="66.0" layoutY="112.0" text="Vorname" />
+      <Label layoutX="69.0" layoutY="170.0" text="Nachname" />
+      <Label layoutX="68.0" layoutY="218.0" text="Firma" />
+      <Label layoutX="69.0" layoutY="266.0" text="Adresse" />
+      <TextField fx:id="tfVorname" layoutX="66.0" layoutY="138.0" />
+      <TextField fx:id="tfNachname" layoutX="66.0" layoutY="187.0" />
+      <TextField fx:id="tfFirma" layoutX="66.0" layoutY="235.0" />
+      <TextField fx:id="tfAdresse" layoutX="66.0" layoutY="283.0" />
+      <Button layoutX="66.0" layoutY="382.0" mnemonicParsing="false" onAction="#btnZurueck" text="Zurück" />
+      <Button layoutX="530.0" layoutY="382.0" mnemonicParsing="false" onAction="#btnErstelleGeKunde" text="Erstellen" />
    </children>
 </Pane>

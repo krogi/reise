@@ -29,6 +29,8 @@ public class AlleMietenViewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        
+        
     }    
     
     @FXML
@@ -38,14 +40,14 @@ public class AlleMietenViewController implements Initializable {
 
     @FXML
     private void btnLoeschen(ActionEvent event) {
-        /*int index = lvAlleMieten.getSelectionModel().getSelectedIndex();
+       /* int index = lvAlleMieten.getSelectionModel().getSelectedIndex();
         if (index != -1) {
             Miete miete = App.getSelectedKunde().getMietenList().get(index);
             miete.getKunde().getMietenList().remove(miete);
             miete.getFahrzeug().getMietenList().remove(miete);
 
             App.setRoot("AlleMietenView");
-        } */
+        }*/
     }
 
 }

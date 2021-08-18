@@ -33,7 +33,7 @@ public class TechnikerViewController implements Initializable {
     
     @FXML
     private void btnGoToMiete(ActionEvent event) throws IOException {
-        App.setRoot("MietenCreatorView");
+        App.setRoot("MaterialienView");
     }
 
     @FXML

@@ -16,23 +16,88 @@ public class App extends Application {
 
     private static Scene scene;
 
-    private static ArrayList<Miete> miete;
-    private static ArrayList<Kunde> kunde;
+    private static ArrayList<Miete> mietenList;
+    private static ArrayList<Kunde> kundeList;
+    private static ArrayList<Techniker> techniker;
+    private static ArrayList<Privatkunde> privatkundenList;
+    private static ArrayList<Geschaeftskunde> geschaeftskundeList;
 
-    public static ArrayList<Miete> getMiete() {
-        return miete;
+    private static Techniker technikerList;
+    private static Kunde selectedKunde;
+    private static Miete selectedMiete;
+    private static Privatkunde selectedprivatkunde;
+    private static Privatkunde selectedgeschaeftskunde;
+
+    public static Techniker getTechniker() {
+        return technikerList;
     }
 
-    public static void setMiete(ArrayList<Miete> miete) {
-        App.miete = miete;
+    public static void setTechniker(Techniker techniker) {
+        App.technikerList = techniker;
+    }
+    
+    public static Kunde getSelectedKunde() {
+        return selectedKunde;
     }
 
-    public static ArrayList<Kunde> getKunde() {
-        return kunde;
+    public static void setSelectedKunde(Kunde selectedKunde) {
+        App.selectedKunde = selectedKunde;
     }
 
-    public static void setKunde(ArrayList<Kunde> kunde) {
-        App.kunde = kunde;
+    public static Miete getSelectedMiete() {
+        return selectedMiete;
+    }
+
+    public static void setSelectedMiete(Miete selectedMiete) {
+        App.selectedMiete = selectedMiete;
+    }
+
+    public static Privatkunde getSelectedprivatkunde() {
+        return selectedprivatkunde;
+    }
+
+    public static void setSelectedprivatkunde(Privatkunde selectedprivatkunde) {
+        App.selectedprivatkunde = selectedprivatkunde;
+    }
+
+    public static Privatkunde getSelectedgeschaeftskunde() {
+        return selectedgeschaeftskunde;
+    }
+
+    public static void setSelectedgeschaeftskunde(Privatkunde selectedgeschaeftskunde) {
+        App.selectedgeschaeftskunde = selectedgeschaeftskunde;
+    }
+
+    public static ArrayList<Miete> getMietenList() {
+        return mietenList;
+    }
+
+    public static void setMietenList(ArrayList<Miete> mietenList) {
+        App.mietenList = mietenList;
+    }
+
+    public static ArrayList<Kunde> getKundeList() {
+        return kundeList;
+    }
+
+    public static void setKundeList(ArrayList<Kunde> kundeList) {
+        App.kundeList = kundeList;
+    }
+
+    public static ArrayList<Privatkunde> getPrivatkundenList() {
+        return privatkundenList;
+    }
+
+    public static void setPrivatkundenList(ArrayList<Privatkunde> privatkundenList) {
+        App.privatkundenList = privatkundenList;
+    }
+
+    public static ArrayList<Geschaeftskunde> getGeschaeftskundeList() {
+        return geschaeftskundeList;
+    }
+
+    public static void setGeschaeftskundeList(ArrayList<Geschaeftskunde> geschaeftskundeList) {
+        App.geschaeftskundeList = geschaeftskundeList;
     }
     
     @Override
@@ -52,6 +117,9 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
+        
+        
+        
         launch();
     }
 
